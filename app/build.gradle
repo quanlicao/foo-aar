@@ -24,3 +24,28 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+task demo {
+    doLast {
+        println rootProject.projectDir
+        println buildDir
+    }
+}
+
+apply plugin: 'maven-publish'
+
+publishing {
+    publications {
+        foo(MavenPublication) {
+            groupId 'foo-aar'
+            artifactId 'foo'
+            version '0.1'
+            artifact("$buildDir/outputs/aar/app-debug.aar")
+        }
+    }
+    repositories {
+        maven {
+            url "${rootProject.projectDir}/maven_repo"
+        }
+    }
+}
