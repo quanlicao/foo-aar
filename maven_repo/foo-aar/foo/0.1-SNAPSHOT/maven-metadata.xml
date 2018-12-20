@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>foo-aar</groupId>
+  <artifactId>foo</artifactId>
+  <version>0.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20181220.074752</timestamp>
+      <buildNumber>2</buildNumber>
+    </snapshot>
+    <lastUpdated>20181220074752</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>aar</extension>
+        <value>0.1-20181220.074752-2</value>
+        <updated>20181220074752</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>0.1-20181220.074752-2</value>
+        <updated>20181220074752</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
